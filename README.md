@@ -40,7 +40,7 @@ After calculating these individual features, the results were combined in 3 cate
 - Decision level
 - Score level fusion
 
-In this notebook, only the [Decision Level Fusion] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/blob/main/brain_eeg_schziophrenia.ipynb) is implemented.
+In this notebook, only the [Decision Level Fusion](https://github.com/adi18-ui/Brain-Schizophrenia-Detection/blob/main/brain_eeg_schziophrenia.ipynb) is implemented.
 
 ### Preprocessing Steps
 
