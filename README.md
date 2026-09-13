@@ -6,7 +6,7 @@ This is the implementation of the paper: “Classification of EEG-Based Brain Co
 
 Can we detect schizophrenia from EEG signals by looking at how different brain regions are connected?
 
-### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm) 39 healthy participant and 45 schizophrenic patients
+#### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm) 39 healthy participant and 45 schizophrenic patients
 I have also uploaded the combined version of the [dataset] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Dataset)
 
 ## Connectivity Features
@@ -40,7 +40,7 @@ After calculating these individual features, the results were combined in 3 cate
 - Decision level
 - Score level fusion
 
-In this notebook, only the Decision Level Fusion is implemented.
+In this notebook, only the [Decision Level Fusion] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/blob/main/brain_eeg_schziophrenia.ipynb) is implemented.
 
 ### Preprocessing Steps
 
@@ -57,3 +57,25 @@ In this notebook, only the Decision Level Fusion is implemented.
 #### vi) Common Average Reference (CAR): the average activity across all EEG channels is subtracted from each channel.
 
 #### vii) Per-channel standardisation: each channel is scaled to have approximately zero mean and unit standard deviation.
+
+### Results
+The model was trained for all the 3 individual categories and then for majority vote. The best result is from VAR based features achieving overall 77.3 % accuracy. All the graphs and the confusion matrix are in the [Results section](https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Results)
+
+Overall Result-
+F1 Scores:
+VAR: 0.7712
+PDC: 0.7243
+CN: 0.6317
+Fusion: 0.7551
+
+Accuracy:
+VAR: 0.7738
+PDC: 0.7262
+CN: 0.6548
+Fusion: 0.7619
+
+Modified Accuracy:
+VAR: 0.7701
+PDC: 0.7239
+CN: 0.6402
+Fusion: 0.7538
