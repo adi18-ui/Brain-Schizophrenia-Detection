@@ -7,7 +7,7 @@ This is the implementation of the paper: “Classification of EEG-Based Brain Co
 Can we detect schizophrenia from EEG signals by looking at how different brain regions are connected?
 
 #### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm) 39 healthy participant and 45 schizophrenic patients
-I have also uploaded the combined version of the [dataset] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Dataset)
+I have also uploaded the combined version of the [dataset](https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Dataset)
 
 ## Connectivity Features
 
