@@ -44,30 +44,16 @@ In this notebook, only the Decision Level Fusion is implemented.
 
 ### Preprocessing Steps
 
-#### i) Linear detrending
+#### i) Linear detrending: removes slow changes or drift in the signal over time.
 
-removes slow changes or drift in the signal over time.
+#### ii) DC offset removal: shifts each EEG channel so that it is centred around zero.
 
-#### ii) DC offset removal
+#### iii) 50 Hz notch filtering: removes power-line noise around 50 Hz.
 
-shifts each EEG channel so that it is centred around zero.
+#### iv) Band-pass filtering: keeps EEG activity between 1–45 Hz and removes frequencies outside this range.
 
-#### iii) 50 Hz notch filtering
+#### v) Artifact handling: Very large signal values are detected using a robust threshold. Small artifact regions are replaced using interpolation.
 
-removes power-line noise around 50 Hz.
+#### vi) Common Average Reference (CAR): the average activity across all EEG channels is subtracted from each channel.
 
-#### iv) Band-pass filtering
-
-keeps EEG activity between 1–45 Hz and removes frequencies outside this range.
-
-#### v) Artifact handling
-
-Very large signal values are detected using a robust threshold. Small artifact regions are replaced using interpolation.
-
-#### vi) Common Average Reference (CAR)
-
-the average activity across all EEG channels is subtracted from each channel.
-
-#### vii) Per-channel standardisation
-
-each channel is scaled to have approximately zero mean and unit standard deviation.
+#### vii) Per-channel standardisation: each channel is scaled to have approximately zero mean and unit standard deviation.
