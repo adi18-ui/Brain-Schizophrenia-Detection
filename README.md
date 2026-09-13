@@ -5,10 +5,10 @@ This is the implementation of the paper: “Classification of EEG-Based Brain Co
 ## Main Goal
 
 Can we detect schizophrenia from EEG signals by looking at how different brain regions are connected?
-Schizophrenia is a brain connectivity issue since the communication network is disrupted.
 
-### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm)
+### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm) 39 healthy participant and 45 schizophrenic patients
 I have also uploaded the combined version of the [dataset] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Dataset)
+
 ## Connectivity Features
 
 This implementation extracts 3 types of connectivity features:
@@ -42,32 +42,32 @@ After calculating these individual features, the results were combined in 3 cate
 
 In this notebook, only the Decision Level Fusion is implemented.
 
-## Preprocessing Steps
+### Preprocessing Steps
 
-### i) Linear detrending
+#### i) Linear detrending
 
 removes slow changes or drift in the signal over time.
 
-### ii) DC offset removal
+#### ii) DC offset removal
 
 shifts each EEG channel so that it is centred around zero.
 
-### iii) 50 Hz notch filtering
+#### iii) 50 Hz notch filtering
 
 removes power-line noise around 50 Hz.
 
-### iv) Band-pass filtering
+#### iv) Band-pass filtering
 
 keeps EEG activity between 1–45 Hz and removes frequencies outside this range.
 
-### v) Artifact handling
+#### v) Artifact handling
 
 Very large signal values are detected using a robust threshold. Small artifact regions are replaced using interpolation.
 
-### vi) Common Average Reference (CAR)
+#### vi) Common Average Reference (CAR)
 
 the average activity across all EEG channels is subtracted from each channel.
 
-### vii) Per-channel standardisation
+#### vii) Per-channel standardisation
 
 each channel is scaled to have approximately zero mean and unit standard deviation.
