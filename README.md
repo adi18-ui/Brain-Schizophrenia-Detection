@@ -14,7 +14,7 @@ This implementation extracts 3 types of connectivity features:
 
 ### i) Vector Autoregressive feature (in time domain)
 
-Explains how the activity of 1 EEG channel can predict future activity in another EEG channel. We construct a matrix-like structure with rows and columns both as individual channels. The value between each EEG channel (e.g: Fp1 and Fp2) tells us the connection strength between the respective channels.
+Explains how the activity of 1 EEG channel can predict future activity in another EEG channel. We construct a matrix-like structure with rows and columns both as individual channels. The value between each EEG channel (eg: Fp1 and Fp2) indicates the connection strength between the respective channels.
 
 ### ii) Partial Directed Coherence (frequency domain)
 
@@ -33,7 +33,7 @@ It considers 4 measures to calculate efficiency.
 
 ## Fusion Methods
 
-After these individual features are calculated, there were 3 categories in which the results were combined.
+After calculating these individual features, the results were combined in 3 categories.
 
 - Feature level
 - Decision level
