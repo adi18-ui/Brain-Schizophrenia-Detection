@@ -58,20 +58,22 @@ In this notebook, only the [Decision Level Fusion] (https://github.com/adi18-ui/
 
 #### vii) Per-channel standardisation: each channel is scaled to have approximately zero mean and unit standard deviation.
 
+
 ### Results
 The model was trained for all the 3 individual categories and then for majority vote. The best result is from VAR based features achieving overall 77.3 % accuracy. All the graphs and the confusion matrix are in the [Results section](https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Results)
 
+
 Overall Result-
-F1 Scores:
-VAR: 0.7712
-PDC: 0.7243
-CN: 0.6317
+F1 Scores: 
+VAR: 0.7712, 
+PDC: 0.7243, 
+CN: 0.6317, 
 Fusion: 0.7551
 
-Accuracy:
-VAR: 0.7738
-PDC: 0.7262
-CN: 0.6548
+Accuracy: 
+VAR: 0.7738, 
+PDC: 0.7262, 
+CN: 0.6548, 
 Fusion: 0.7619
 
 Modified Accuracy:
