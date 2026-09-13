@@ -5,9 +5,10 @@ This is the implementation of the paper: “Classification of EEG-Based Brain Co
 ## Main Goal
 
 Can we detect schizophrenia from EEG signals by looking at how different brain regions are connected?
-
 Schizophrenia is a brain connectivity issue since the communication network is disrupted.
 
+### Dataset Used: [Laboratory for Neurophysiology and Neuro-Computer Interfaces](http://brain.bio.msu.ru/eeg_schizophrenia.htm)
+I have also uploaded the combined version of the [dataset] (https://github.com/adi18-ui/Brain-Schizophrenia-Detection/tree/main/Dataset)
 ## Connectivity Features
 
 This implementation extracts 3 types of connectivity features:
